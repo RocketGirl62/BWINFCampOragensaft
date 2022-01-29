@@ -20,7 +20,7 @@ except:
     sys.exit(0)
 
 n = int(allezeilen[0])
-
+print("hello World")
 
 wert1 = []
 wert2 = []
