@@ -60,6 +60,8 @@ for j in range (1, n-1):
 
 print(ergebnis3)
 
+d.write(str(ergebnis1)+" "+str(ergebnis3)+"\n")
+
 d.close()
 
 
