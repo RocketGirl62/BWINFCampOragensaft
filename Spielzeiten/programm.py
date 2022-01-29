@@ -39,12 +39,12 @@ a = 0
 ergebnis = 0
 while a < n:#for a in range(0,n):
     anfangszeit = lst[a][0]
-    for j in range(a, n): 
-        if lst[j][1] <= lst[j][0]:
+    for j in range(a, n-1): 
+        if lst[j][1] >= lst[j+1][0]:
             a = a +1
         else:
-            if ergebnis < (lst[j][0] - anfangszeit):
-                ergebnis = lst[j][0] - anfangszeit
+            if ergebnis < (lst[j][1] - anfangszeit):
+                ergebnis = lst[j][1] - anfangszeit
             a = a+1
             break
 
