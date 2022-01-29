@@ -35,10 +35,20 @@ for i in range(1, n+1):
 
 lst.sort(key=lambda x: x[0])
 print(lst)
-
-for a in range(0,n):
+a = 0
+ergebnis = 0
+while a <= n:#for a in range(0,n):
     anfangszeit = lst[a][0]
-    if lst[a][1] <= 
+    for j in range(a, n): 
+        if lst[j][1] <= lst[j][0]:
+            a = a +1
+        else:
+            if ergebnis < (lst[j][0] - anfangszeit):
+                ergebnis = lst[j][0] - anfangszeit
+            break
+
+print(ergebnis)
+
 
 
 
