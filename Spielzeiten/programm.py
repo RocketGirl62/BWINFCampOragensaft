@@ -37,7 +37,7 @@ lst.sort(key=lambda x: x[0])
 print(lst)
 a = 0
 ergebnis = 0
-while a <= n:#for a in range(0,n):
+while a < n:#for a in range(0,n):
     anfangszeit = lst[a][0]
     for j in range(a, n): 
         if lst[j][1] <= lst[j][0]:
@@ -45,6 +45,7 @@ while a <= n:#for a in range(0,n):
         else:
             if ergebnis < (lst[j][0] - anfangszeit):
                 ergebnis = lst[j][0] - anfangszeit
+            a = a+1
             break
 
 print(ergebnis)
