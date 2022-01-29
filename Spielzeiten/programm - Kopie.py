@@ -37,7 +37,7 @@ lst.sort(key=lambda x: x[0])
 print(lst)
 
 
-#print(ergebnis)
+
 ergebnis1 = 0
 for a in range(0, n-1):
 
