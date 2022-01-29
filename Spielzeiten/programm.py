@@ -31,13 +31,16 @@ for i in range(1, n+1):
     print(lst)
 
 
-lst.sort(key=lambda x: x[1])
+
+
+lst.sort(key=lambda x: x[0])
 print(lst)
 
+for a in range(0,n):
+    anfangszeit = lst[a][0]
+    if lst[a][1] <= 
 
 
-wert1 = []
-wert2 = []
 
 
 d.close()
